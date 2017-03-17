@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function createImage() {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            // голова
+            ctx.beginPath();
+            ctx.arc(250, 190, 60, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "orange";
+            ctx.fill();
+            ctx.strokeStyle;
+            ctx.stroke();
+            // левый глаз
+            ctx.beginPath();
+            ctx.arc(227, 185, 10, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            // правый глаз
+            ctx.beginPath();
+            ctx.arc(270, 186, 10, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            // правый  зрачок
+            ctx.beginPath();
+            ctx.fillStyle = "black";
+            ctx.arc(269, 187.5, 3.5, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            // левый  зрачоk
+            ctx.beginPath();
+            ctx.arc(226, 186.5, 3.5, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            // носик
+            ctx.beginPath();
+            ctx.arc(247, 205, 3.5, Math.PI, 4 * Math.PI, false);
+            ctx.lineWidth = 1;
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+            // левое ухо
+            ctx.moveTo(193, 170);
+            ctx.lineTo(180, 130);
+            ctx.lineTo(225, 135);
+            ctx.stroke()
+                // правое ухо
+            ctx.moveTo(306, 170);
+            ctx.lineTo(325, 130);
+            ctx.lineTo(275, 135)
+            ctx.stroke()
+                // усики левые
+            ctx.moveTo(230, 210);
+            ctx.lineTo(180, 190);
+            ctx.stroke()
+            ctx.moveTo(230, 215);
+            ctx.lineTo(182, 215);
+            ctx.stroke()
+            ctx.moveTo(230, 220);
+            ctx.lineTo(190, 234);
+            ctx.stroke()
+                // усики правые
+            ctx.moveTo(265, 210);
+            ctx.lineTo(320, 190);
+            ctx.stroke()
+            ctx.moveTo(265, 215);
+            ctx.lineTo(317, 215);
+            ctx.stroke()
+            ctx.moveTo(265, 220);
+            ctx.lineTo(308, 234);
+            ctx.stroke()
+                // улыбка
+            ctx.beginPath();
+            ctx.moveTo(230, 250);
+            ctx.bezierCurveTo
+                // название
+            ctx.fillStyle = "orange";
+            ctx.font = "italic 12pt Verdana";
+            ctx.filltext("Кошеня", 100, 100);
+
+
+            // for future changes
+        }
+    </script>
+</head>
+
+<body onload="createImage();">
+    <canvas id="canvas" style="border: 2px solid black" width="400" height="600"> </canvas>
+</body>
+
+</html>
